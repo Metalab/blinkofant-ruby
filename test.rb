@@ -1,8 +1,8 @@
 require './screen'
 require './device'
 
-d = Blinkofant::Device.new
 s = Blinkofant::Screen.new
+d = Blinkofant::Device.new(s)
 
 s.row(1, true)
 d.flush(s)
